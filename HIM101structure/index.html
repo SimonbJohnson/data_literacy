@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Humanitarian Information Management 101: Structuring Data</title>
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Simon Johnson">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white_custom.css" id="theme">
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-46399763-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>          
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+       
+    </head>
+    <body>
+        <div class="reveal">
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section id="frontcover" data-background="#009688" class="slide">
+                    <div class="title_container">
+                        <h2 class="white">Humanitarian Information Management 101</h2>
+                        <h3 class="white">Structuring Data</h3>
+                        <p class="text-small-centre white no-pdf">
+                            Press right on your keyboard or swipe 
+                            right to navigate
+                        </p>
+                    </div>
+                </section>
+                <section id="contents" class="slide">
+                    <div class="header_bar teal">
+                        <div class="header_title">Contents</div>
+                    </div>
+                    <p class="text-small-centre">Click below to jump to a section</p>
+                    <p class="text-small-centre">
+                        <a class="contents_link" href="#/introduction">Introduction</a>
+                    </p>
+                    <p class="text-small-centre">
+                        <a class="contents_link" href="#/reporting_structure_0">Reporting Structure</a>
+                    </p>
+                    <p class="text-small-centre">
+                        <a class="contents_link" href="#/well_formed_data_0">Well Formed Data</a>
+                    </p>
+                    <p class="text-small-centre">
+                        <a class="contents_link" href="#/wide_narrow_0">Wide and Narrow Data</a>
+                    </p>
+                    <p class="text-small-centre">
+                        <a class="contents_link" href="#/spreadsheet_tools_0">Spreadsheet Tools and Data structures</a>
+                    </p>                                                                             
+                </section>
+                <section id="introduction" class="slide">
+                    <div class="header_bar teal">
+                        <div class="header_title">Introduction</div>
+                    </div>
+                    <p class="text-small">
+                        Spreadsheets offer an infinite way of arranging and keeping track of data.  However, some forms are easier for you and others to work with.  You’ll be introduced to what well formed data is and the difference between wide and narrow data and the consequences of choosing different forms.
+                    </p>
+                    <p class="text-small">The guidelines here should not
+                        be considered hard and fast rules, but rather
+                        general guidance.  The context of use can 
+                        sometime require different and unique approaches.</p>
+                    <p class="text-small text-bottom">
+                        Click the arrows icons or press right and left arrow key to navigate.
+                    </p>                        
+                </section>
+                <section id="reporting_structure_0" data-background="#673AB7" class="slide">
+                    <div class="title_container">
+                        <h1 class="white">Reporting Structure</h1>
+                    </div>
+                </section>
+                <section id="reporting_structure_1" class="slide">
+                    <div class="header_bar deeppurple">
+                        <div class="header_title">Reporting Structures</div>
+                    </div>
+                    <p class="text-small">Many times when in the field it can be tempting to structure the data in the format it is reported in as this can save time.  Often this format would not count as well formed data.  The drawback is that the data is then structured in a way that is only useful for that one use case.
+                    </p>
+                    <img class="stretch" src="pics/reporting1.png" alt="Save Multiple versions" />
+                    <p class="image-text">An example of data that is not well formed.</p>
+                </section>
+                <section id="reporting_structure_2" class="slide">
+                    <div class="header_bar deeppurple">
+                        <div class="header_title">Reporting Structures</div>
+                    </div>
+                    <p class="text-small">If you find out you have another use case for the data it can be a lot of work to transform the data into the form you need. By starting with well formed data you can save yourself and others a lot of work and time. Spreadsheets also provide many tools such as pivot tables for taking well formed data and transforming to the form you need for reporting.
+                    </p>
+                    <img class="stretch" src="pics/reporting2.png" alt="Save Icon" />
+                    <p class="image-text">A second example of data that is not well formed.</p>
+                </section>
+                <section  id="reporting_structure_3" class="slide">
+                    <div class="header_bar deeppurple">
+                        <div class="header_title">Reporting Structures</div>
+                    </div>
+                    <img class="stretch" src="pics/well_formed_data.png" alt="Data workflow" />
+                    <p class="image-text">Well formed data is easy to transform into many forms useful for reporting.</p>
+                </section>
+                <section id="well_formed_data_0" data-background="#FF9800" class="slide">
+                    <div class="title_container">
+                        <h1 class="white">Well Formed Data</h1>
+                    </div>
+                </section>
+                <section id="well_formed_data_1" class="slide">
+                    <div class="header_bar orange">
+                        <div class="header_title">Well Formed Data</div>
+                    </div>
+                    <p class="text-small">
+                        What is well formed data?
+                    </p>                    
+                    <p class="text-small">
+                        Well formed data has the following characteristics:
+                    </p>
+                    <p class="text-small">
+                        <ul class="text-small">
+                            <li>Only one table per sheet</li>
+                            <li>Only one data type per column</li>
+                            <li>Only one value per cell</li>
+                            <li>Repeat Values, do not merge cells</li>
+                            <li>Does not contain totals and subtotals</li>
+                            <li>All rows are the same length</li>
+                        </ul>
+                    </p>
+                </section>
+                <section id="well_formed_data_2" class="slide">
+                    <div class="header_bar orange">
+                        <div class="header_title">Well Formed Data</div>
+                    </div>
+                    <p class="text-small">
+                        Only one table per sheet
+                    </p>
+                    <img class="stretch" src="pics/onetable.png" alt="" />
+                    <p class="text-small">On the left the data is incorrectly laid out with multiple tables per sheet.  On the right is the same data in a well formed structure.</p>
+                </section>
+                <section id="well_formed_data_3" class="slide">
+                    <div class="header_bar orange">
+                        <div class="header_title">Well Formed Data</div>
+                    </div>
+                    <p class="text-small">
+                        Only one data type per column
+                    </p>
+                    <img class="stretch" src="pics/data_types.png" alt="" />
+                    <p class="text-small">Here the column incorrectly contains strings and number data types</p>
+                    </p>                    
+                </section>
+                <section id="well_formed_data_4" class="slide">
+                    <div class="header_bar orange">
+                        <div class="header_title">Well Formed Data</div>
+                    </div>
+                    <p class="text-small">
+                        Only one value per cell
+                    </p>
+                    <img class="stretch" src="pics/single_cell.png" alt="" />
+                    <p class="text-small">At the top there is incorrectly multiple values list in one cell.  In the well formed example at the bottom data is repeated to get one value per cell.</p>
+                </section>
+                <section id="well_formed_data_5" class="slide">
+                    <div class="header_bar orange">
+                        <div class="header_title">Well Formed Data</div>
+                    </div>
+                    <p class="text-small">
+                       Repeat Values, do not merge cells
+                    </p>                    
+                </section>
+                <section id="well_formed_data_6" class="slide">
+                    <div class="header_bar orange">
+                        <div class="header_title">Well Formed Data</div>
+                    </div>
+                    <p class="text-small">
+                        Does not contain totals and subtotals
+                    </p>                    
+                </section>
+                <section id="well_formed_data_7" class="slide">
+                    <div class="header_bar orange">
+                        <div class="header_title">Well Formed Data</div>
+                    </div>
+                    <p class="text-small">
+                        All rows are the same length
+                    </p>                    
+                </section>                
+                <section id="wide_narrow_0" data-background="#03A9F4" class="slide">
+                    <div class="title_container">
+                        <h1 class="white">Wide And Narrow Data</h1>
+                    </div>
+                </section>
+                <section id="wide_narrow_1" class="slide">
+                    <div class="header_bar blue">
+                        <div class="header_title">Wide and Narrow Data</div>
+                    </div>
+                    <p class="text-small">
+                        Well formed data can also come in wide and long form.
+                    </p>
+                    <p class="text-small">
+                        Wide data is presented with each different data variable in a separate column.
+                    </p>
+                    <p class="text-small">
+                        Narrow data is presented with one column containing all the values and another column listing the context of the value.
+                    </p>
+                    <p class="text-small">
+                        This is often easier to implement; addition of a new field does not require any changes to the structure of the table, however it can be harder for people to understand.  Spreadsheet tools such as pivot tables can used to transform to wide data to help comprehension.
+                    </p>
+                </section>
+                <section id="spreadsheet_tools_0" data-background="#FFD600" class="slide">
+                    <div class="title_container">
+                        <h1 class="white">Spreadsheet tools for well formed data</h1>
+                    </div>
+                </section>
+                <section id="spreadsheet_tool_1" class="slide">
+                    <div class="header_bar yellow">
+                        <div class="header_title">Spreadsheet tools</div>
+                    </div>
+                    <p class="text-small">
+                        Pivot tables
+                    </p>
+                </section>                                                                                                
+            </div>
+        </div>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+        <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script> 
+        <script src="js/resize-img-pdf.js"></script>
+        <script>
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: false,
+                                         width: 1200,
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+            
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
+            
+        </script>
+    </body>
+</html>
